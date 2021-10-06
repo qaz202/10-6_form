@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>設計思考工作營報名</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <form action="" method="POST">
+
+        <h1>— 設計思考工作營報名 —</h1>
+        <h2>活動目的</h2>
+        <p>透過體驗設計思考方法，培養創意發想與能力並實際學習與操作設計思考之方法。</p>
+
+        <h2>基本資料</h2>
+        <label for="name">姓名</label>
+        <input type="text" name="name" id="name" placeholder="請輸入姓名" required>
+        <br/>
+
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email" placeholder="請輸入電子信箱" required>
+        <br/>
+
+        <label for="phoneNumber">行動電話</label>
+        <input type="tel" name="phoneNumber" id="phoneNumber" minlength="10" maxlength="10" placeholder="請輸入手機號碼" required>
+        <br/>
+
+        <label for="signUp">報名場次</label>
+        <select name="signUp" id="signUp">
+            <option value="first">第一場：2020/10/06 上午9:00</option>
+            <option value="second">第二場：2020/10/07 上午10:00</option>
+            <option value="third">第三場：2020/10/08 下午14:00</option>
+        </select>
+        <br/>
+
+        <label for="mealSelection">餐點選擇</label>
+        <input type="radio" name="meatFood" id="meatFood" value="meatFood" required>
+        <label for="meatFood">葷食</label>
+        <input type="radio" name="vegetarianFood" id="vegetarianFood" value="vegetarianFood" required>
+        <label for="vegetarianFood">素食</label>
+
+        <h2>感興趣的領域</h2>
+
+        <input type="checkbox" name="interactiveDesign" id="interactiveDesign" value="interactiveDesign" required>
+        <label for="interactiveDesign">互動設計</label>
+        <input type="checkbox" name="graphicDesign" id="graphicDesign" value="graphicDesign" required>
+        <label for="graphicDesign">平面設計</label>
+        <input type="checkbox" name="interiorDesign" id="interiorDesign" value="interiorDesign" required>
+        <label for="interiorDesign">室內設計</label>
+        <input type="checkbox" name="sculpture" id="sculpture" value="sculpture" required>
+        <label for="sculpture">雕塑</label>
+        <input type="checkbox" name="pictureBook" id="pictureBook" value="pictureBook" required>
+        <label for="pictureBook">繪本</label>
+        <input type="checkbox" name="photography" id="photography" value="photography" required>
+        <label for="photography">攝影</label>
+
+        <h2>特殊需求&活動建議</h2>
+        <textarea name="word" id="word" cols="102" rows="10"></textarea>
+        <br/>
+
+        <input type="submit" value="送出">
+        <input type="reset" value="清除">
+
+
+    </form>
+</body>
+</html>
